@@ -2,8 +2,8 @@ const restaurantes = [
   {
     "name": "Latife",
     "image": "../assets/latife.png",
-    "latitudee": -23.557567,
-    "longitudee": -46.658615,
+    "latitude": -23.557567,
+    "longitude": -46.658615,
     "description": "O Latife Gastronomia Árabe é o primeiro Buffet por quilo especializado em Culinária Árabe em São Paulo. O cardápio do restaurante é uma continuação dos procedimentos que Dona Latife, de ascendência árabe, adotava em seu dia a dia.",
     "type": "arabe"
   },
