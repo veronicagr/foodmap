@@ -13,24 +13,29 @@
 
 <body>
   <div class="row home-1">
-    <div class=" col-sm-12 home">
+    <div class=" col-sm-12 home d-flex flex-column">
       <h1 class="logo">FOODMAP</h1>
+      <img class="img-logo" src="./assets/logo.jpg" alt="">
     </div>
   </div>
 
   <div class="row incial">
+
     <div class=" pg-inicial col-sm-12">
-      <h1>foodmap</h1>
-      <div id="map" class="col-sm-6"></div>
-      <div class="sub-title">
-        <h2>Comida cerca de ti</h2>
+      <h1 class="texto-home">FOODMAP</h1>
+      <div class="container d-flex justify-content-center">
+        <div id="map" class="col-sm-6"></div>
       </div>
-      <div class="input-text mt-3">
+      <div class="sub-title">
+        <h2 class="texto-home">Comida cerca de ti</h2>
+
+      </div>
+      <div class="input-text mt-3 d-flex justify-content-center">
         <input class="texto-input mb-2" type="text">
-        <button class="filtrar">filtrar</button>
+        <button class="filtrar ml-3">PESQUISAR</button>
       </div>
       <div class="row">
-        <div class=" col-sm-12 restaurantes" data-toggle="modal" data-target="#click-restaureante"></div>
+        <div class=" col-sm-12 col-12 d-flex justify-content-center flex-wrap mt-3 restaurantes" data-toggle="modal" data-target="#click-restaureante"></div>
       </div>
     </div>
   </div>

@@ -1,6 +1,4 @@
 
-$('.pg-inicial').delay('3000').fadeIn('slow');
-
 function initMap() {
     var uluru = { lat: -25.344, lng: 131.036 };
     var map = new google.maps.Map(
@@ -9,13 +7,13 @@ function initMap() {
 };
 
 $(document).ready(function () {
-
+    $('.pg-inicial').delay('3000').fadeIn('slow');
 
     for (restaurante of restaurantes) {
         var img = $('<img></img>').attr('src', restaurante.image).attr('name', restaurante.name).attr('description', restaurante.description).val(restaurante.type);
         $(".restaurantes").append(img);
     }
-    $('.filtrar').click(function () {
+    var teste = $('.filtrar').click(function () {
         var inputValue = $('.texto-input').val();
 
         $("img").each(function () {
@@ -25,17 +23,19 @@ $(document).ready(function () {
                 $(this).fadeIn('slow');
             }
         });
+
     })
 
     $('.texto-input').on('input', function () {
         if ($(this).val() === "") {
             $("img").each(function () {
-                $(this).fadeIn('slow')
+                $(this).fadeIn('slow');
             });
         }
     })
 
     $('img').click(function (e) {
+
         var nomeRestaurante = e.target.getAttribute('name');
         var imagemRestaurante = e.target.getAttribute('src');
         var descricaoRestaurante = e.target.getAttribute('description');
@@ -47,8 +47,8 @@ $(document).ready(function () {
         $(".modal-title").append(nome);
         $(".modal-title").append(img);
         $(".modal-body").append(descricao);
-    })
 
+    })
 });
 
 

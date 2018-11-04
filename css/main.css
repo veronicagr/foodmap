@@ -3,7 +3,7 @@
 }
 
 .home{
-background-color: black;
+background-color:orange;
 height: 100vh;
 width: 100%;  
 display: flex;
@@ -11,17 +11,35 @@ justify-content: center;
 align-items: center;
 }
 
+.home, .pg-inicial{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
 .logo{
  color: white;   
 }
 .pg-inicial{ 
-background-color: gray;
-height: 100vh;
-width: 100%;  
-display: flex;
-flex-direction: column;
-align-items: center;
+display: none;
+background-color: orange;
 padding-top: 20px;
+color: white;
+
+}
+
+.texto-home{
+text-align: center;  
+}
+
+.filtrar{
+border-radius: 4px;
+color: white;
+background-color: rgb(228, 75, 28);  
+height: 30px;
+padding: 2px;
 }
 
 #map {
@@ -34,16 +52,16 @@ border-radius: 6px;
   .sub-title{
 margin-top: 20px;   
   }
- 
-li{
-color: red;
-padding-top: 10px;  
-}
 
 img{
 width: 100px;
 height: 100px;
-margin: 6px;
+margin: 7px;
 border-radius: 5px;
+}
 
+.img-logo{
+border-radius: 20px;  
+height: 200px;
+width: 200px;
 }
