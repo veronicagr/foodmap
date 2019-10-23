@@ -7,13 +7,14 @@ function initMap() {
 };
 
 $(document).ready(function () {
-    $('.pg-inicial').delay('3000').fadeIn('slow');
+    $('.home-page-inicial').fadeOut(4000);
 
     for (restaurante of restaurantes) {
         var img = $('<img></img>').attr('src', restaurante.image).attr('name', restaurante.name).attr('description', restaurante.description).val(restaurante.type);
         $(".restaurantes").append(img);
     }
-    var teste = $('.filtrar').click(function () {
+
+    var filtro = $('.button-filtrar').click(function () {
         var inputValue = $('.texto-input').val();
 
         $("img").each(function () {
@@ -47,8 +48,9 @@ $(document).ready(function () {
         $(".modal-title").append(nome);
         $(".modal-title").append(img);
         $(".modal-body").append(descricao);
+    });
 
-    })
 });
+
 
 

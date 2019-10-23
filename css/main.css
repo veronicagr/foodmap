@@ -1,58 +1,34 @@
 .body{
- width: 100%   
+background:#F0F0F0!important;
+font-weight: 400;
+font-family: "Source Sans Pro", sans-serif;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-font-smoothing: subpixel-antialiased;
+color: #666;
+line-height: 25px;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+overflow-x: hidden; 
 }
 
-.home{
+.img-logo{
+border-radius: 20px;  
+height: 200px;
+width: 200px;
+padding-top: 10px;
+} 
+
+.home-page-inicial{
+width: 100%;
+height: 100vh;  
 background-color:orange;
-height: 100vh;
-width: 100%;  
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: column;
 }
-
-.home, .pg-inicial{
-position: absolute;
-top:0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
-.logo{
- color: white;   
-}
-.pg-inicial{ 
-display: none;
-background-color: orange;
-padding-top: 20px;
-color: white;
-
-}
-
-.texto-home{
-text-align: center;  
-}
-
-.filtrar{
-border-radius: 4px;
-color: white;
-background-color: rgb(228, 75, 28);  
-height: 30px;
-padding: 2px;
-}
-
-#map {
-margin-top: 20px;
-height: 180px;
-width: 260px;
-border-radius: 6px;
-  }
-
-  .sub-title{
-margin-top: 20px;   
-  }
-
 img{
 width: 100px;
 height: 100px;
@@ -60,8 +36,36 @@ margin: 7px;
 border-radius: 5px;
 }
 
-.img-logo{
-border-radius: 20px;  
-height: 200px;
-width: 200px;
+.page-search-food{
+height: 96vh;  
 }
+
+.button-filtrar{
+background-color: black;
+color: white;
+border-radius: 5px;
+padding: 5px;  
+font-size: 15px;
+}
+
+.texto-input{
+border-radius:3px ;  
+margin-bottom: 15%;
+}
+
+.footer{
+background-color: orange;  
+color: white;
+height: 2%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+}
+
+@media screen and (max-height: 640px) {
+  .page-search-food{
+    height: auto;  
+    }
+}
+
