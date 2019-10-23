@@ -48,6 +48,9 @@ $(document).ready(function () {
         $(".modal-title").append(nome);
         $(".modal-title").append(img);
         $(".modal-body").append(descricao);
+
+
+
     });
 
 });
